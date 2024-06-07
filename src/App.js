@@ -9,6 +9,7 @@ import Exam6_1, {Exam6_2, Exam6_3} from "./exam/Exam6"; // default가 아닌 함
 import { ThemeProvider } from "./contextAPI/ThemeContext";
 import ThemeToggle from "./contextAPI/ThemeToggle";
 import ThemeComponent from "./contextAPI/ThemeComponent";
+import TodoList from "./todoList/TodoList";
 
 // 터미널 ctrl + shirt + ` 로 열고
 // 터미널에서 yarn start 서버 켜기
@@ -26,14 +27,16 @@ function App() {
       {/* <Exam3/> */}
       {/* <Exam4/> */}
       {/* <Exam5/> */}
-      <Exam6_1 isLogin={true}/>   {/*isLogin이라는 이름으로 true prop값 전달 */}
-      <Exam6_2/>
-      <Exam6_3 label="클릭해보세요~"/>
+      {/* <Exam6_1 isLogin={true}/>   */}    {/*isLogin이라는 이름으로 true prop값 전달 */}
+      {/* <Exam6_2/>
+      <Exam6_3 label="클릭해보세요~"/> */}
       {/* themeProvider 안에 작성된 값은 themeProvider children값으로 들어옴 */}
-      <ThemeProvider>
-        <ThemeToggle/> {/* 첫 번째 children theme, 혹은 toggleTheme 사용 가능*/}
-        <ThemeComponent/> {/* 두 번째 children */}
-      </ThemeProvider>
+      {/* <ThemeProvider>
+             <ThemeToggle/>  */}  {/* 첫 번째 children theme, 혹은 toggleTheme 사용 가능*/}
+          {/* <ThemeComponent/> */}  {/* 두 번째 children */}
+      {/* </ThemeProvider>*/}
+    <TodoList/> 
+      
     </div>
   );
 }
