@@ -19,7 +19,7 @@ import { useState } from "react";
 
 function TodoList(){
 
-    // 상태
+    // ========= 상태 ==============
     // 어떠한 기준에 따라 바뀌어야 할 때는 상태로 작성
     const [todos, setTodos] = useState([{title: "React 복습하기", isDone: false},
                                       {title: "일기쓰기", isDone: true}]); // js 객체 형태
@@ -28,7 +28,7 @@ function TodoList(){
 
 
 
-    // 함수
+    // ========== 함수 ==============
 
 
     // 할 일 추가 함수
@@ -81,6 +81,7 @@ function TodoList(){
 
 
     // return () : 화면에 랜더링할 jsx 작성 구문
+    
     return ( // jsx는 무조건 부모 요소가 하나는 감싸져 있어야 함
         <div>
             <h1>Todo List</h1>
